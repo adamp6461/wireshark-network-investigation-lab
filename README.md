@@ -1,4 +1,3 @@
-# wireshark-network-investigation-lab
 # Wireshark Network Investigation Lab
 
 ## Project Overview
