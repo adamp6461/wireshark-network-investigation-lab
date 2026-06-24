@@ -45,7 +45,8 @@ Launched Wireshark and verified available network capture interfaces.
 
 Confirmed packet capture functionality using the active Ethernet adapter.
 
-<img src="screenshots/Step-1.png" alt="Step 1" width="900">
+![Step 1](screenshots/Step-1.png)
+
 ---
 
 ### Step 2 – Live Packet Capture
