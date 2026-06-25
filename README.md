@@ -8,6 +8,8 @@ Network activity was intentionally generated to simulate a typical troubleshooti
 
 The objective of this investigation was to develop practical experience analyzing packet captures while documenting findings using industry-standard network analysis techniques.
 
+📄 **[Read the Full Incident Report](incident-report/incident-report.md)**
+
 ---
 
 ## Technologies Used
