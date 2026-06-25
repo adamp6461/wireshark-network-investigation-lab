@@ -196,6 +196,20 @@ The following MITRE ATT&CK techniques were reviewed as part of understanding obs
 | ------------------------------- | --------- | ------------------------------------------ |
 | Application Layer Protocol: DNS | T1071.004 | DNS traffic observed during packet capture |
 
+### Defensive Relevance
+
+[#defensive-relevance](#defensive-relevance)
+
+While this investigation confirmed normal network behavior, the same protocols analyzed here are commonly abused in real-world attacks. Recognizing the baseline is what makes anomalies visible:
+
+- **DNS Tunneling / C2 Beaconing** – Abnormally long DNS queries, high query frequency to a single domain, or unusual record types (e.g. TXT) can indicate data exfiltration or command-and-control traffic disguised as DNS.
+- **ICMP Tunneling** – Oversized or irregular ICMP payloads can be used to exfiltrate data or establish covert channels, since ICMP is frequently allowed through firewalls.
+- **TCP Anomalies** – Repeated SYN packets without completed handshakes (SYN floods), unexpected port usage, or RST packets immediately following SYN/ACK can indicate scanning activity or blocked exfiltration attempts.
+
+Establishing what normal traffic looks like — as demonstrated in this lab — is a foundational skill for identifying these deviations in a production SOC environment.
+
+---
+
 **Note:** The network activity analyzed in this project was intentionally generated in a controlled lab environment and represents normal network behavior rather than malicious activity.
 
 ---
