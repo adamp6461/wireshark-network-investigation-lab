@@ -198,8 +198,6 @@ The following MITRE ATT&CK techniques were reviewed as part of understanding obs
 
 ### Defensive Relevance
 
-[#defensive-relevance](#defensive-relevance)
-
 While this investigation confirmed normal network behavior, the same protocols analyzed here are commonly abused in real-world attacks. Recognizing the baseline is what makes anomalies visible:
 
 - **DNS Tunneling / C2 Beaconing** – Abnormally long DNS queries, high query frequency to a single domain, or unusual record types (e.g. TXT) can indicate data exfiltration or command-and-control traffic disguised as DNS.
